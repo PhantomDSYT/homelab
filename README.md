@@ -44,9 +44,9 @@ A personal homelab project built on Proxmox to gain hands-on experience with vir
 
 ### Phase 2 - Container Platform
 
-* [ ] Create Ubuntu Server VM
-* [ ] Install Docker and Docker Compose
-* [ ] Deploy Portainer
+* [x] Create Ubuntu Server VM
+* [x] Install Docker and Docker Compose
+* [x] Deploy Portainer
 * [ ] Deploy Uptime Kuma
 
 ### Phase 3 - Application Hosting
