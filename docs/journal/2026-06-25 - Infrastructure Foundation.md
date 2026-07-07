@@ -1,4 +1,4 @@
-## Milestone 1: Infrastructure Foundation
+## 2026-06-25 - Infrastructure Foundation
 
 ### Objective
 Build a secure, remotely accessible virtualization environment.
