@@ -6,7 +6,6 @@ Tailscale provides secure remote access to my homelab from anywhere without expo
 
 This approach allows me to manage my infrastructure securely while keeping the attack surface as small as possible.
 
-⸻
 
 ## Why I Chose Tailscale
 
@@ -20,7 +19,6 @@ I selected Tailscale for several reasons:
 
 Since this homelab is intended to simulate real-world infrastructure, I wanted remote access that prioritizes both security and ease of management.
 
-⸻
 
 ## Installation
 
@@ -41,7 +39,6 @@ tailscale up --ssh
 
 ```
 
-⸻
 
 ## Remote Administration
 
@@ -57,7 +54,6 @@ This allows me to:
 
 Because all traffic travels across my private Tailnet, management interfaces remain inaccessible to anyone who is not authenticated to my Tailscale network.
 
-⸻
 
 ## Security Decisions
 
@@ -72,7 +68,6 @@ Rather than opening ports on my router, I chose Tailscale because it provides:
 
 This architecture follows the principle of minimizing exposure while still allowing convenient remote administration.
 
-⸻
 
 ## Services Accessible Through Tailscale
 
@@ -86,9 +81,8 @@ The following management services are currently accessible only through my priva
 
 Future management services will also remain private unless there is a specific reason to publish them through a reverse proxy.
 
-⸻
 
-### Future Improvements
+## Future Improvements
 
 * Configure subnet routing if additional internal devices require remote access.
 * Integrate Tailscale with additional virtual machines as the homelab expands.
