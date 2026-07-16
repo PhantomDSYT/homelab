@@ -1,0 +1,13 @@
+http:
+  routers:
+    uptime:
+      rule: "Host(`uptime.lab`)"
+      entryPoints:
+        - web
+      service: uptime
+
+  services:
+    uptime:
+      loadBalancer:
+        servers:
+          - url: "http://docker01:3001"

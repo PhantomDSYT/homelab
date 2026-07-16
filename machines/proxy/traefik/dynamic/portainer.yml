@@ -1,0 +1,13 @@
+http:
+  routers:
+    portainer:
+      rule: "Host(`portainer.lab`)"
+      entryPoints:
+        - web
+      service: portainer
+
+  services:
+    portainer:
+      loadBalancer:
+        servers:
+          - url: "https://docker01:9443"

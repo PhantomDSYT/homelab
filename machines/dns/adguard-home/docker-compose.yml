@@ -1,0 +1,21 @@
+# AdGuard Home
+# VM: dns01
+# Purpose: Internal DNS server and network-wide ad blocking
+
+services:
+  adguard:
+    image: adguard/adguardhome:v0.107.78
+    container_name: adguard
+    restart: unless-stopped
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+      - "80:80/tcp"
+      - "3000:3000/tcp"
+    volumes:
+      - adguard_work:/opt/adguardhome/work
+      - adguard_conf:/opt/adguardhome/conf
+
+volumes:
+  adguard_work:
+  adguard_conf:
